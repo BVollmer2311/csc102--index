@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sets the character encoding for the webpage -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sets the title shown on the browser tab -->
+    <title>Quarks Casino</title>
+
+    <!-- Links the external JavaScript file to this HTML page -->
+    <script src="code.js" defer></script>
+</head>
+
+<body>
+    <!-- Main heading for the casino game page -->
+    <h1>Quarks Casino</h1>
+
+    <!-- Intro text explaining the game -->
+    <p>Welcome to Quarks Casino. Enter your name and pull the lever. Survive the machine.</p>
+
+    <!-- Form used for all user input -->
+    <form onsubmit="return playQuarksCasino();">
+        <!-- Label for the player's name input -->
+        <label for="playerName">Enter your name:</label>
+
+        <!-- Textbox where the player types their name -->
+        <input type="text" id="playerName" name="playerName">
+
+        <!-- Submit button that starts the game -->
+        <button type="submit">Play Game</button>
+    </form>
+
+    <!-- Area where validation messages appear using innerHTML -->
+    <p id="validationMessage"></p>
+
+    <!-- Area where game results appear using innerHTML -->
+    <p id="gameResult"></p>
+
+    <!-- Area where bonus result appears using innerHTML -->
+    <p id="bonusResult"></p>
+</body>
+</html>
